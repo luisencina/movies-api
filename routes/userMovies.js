@@ -47,7 +47,6 @@ function userMoviesApi(app) {
     next
   ) {
     const { body: userMovie } = req;
-
     try {
       const createdUserMovieId = await userMoviesService.createUserMovie({
         userMovie
